@@ -1,0 +1,142 @@
+/*Encabezado de la página que incluye ícono y título*/
+#row-1 .container-fluid #DMKHeader{
+    background-color: #186cf7;
+    display: flex;
+    justify-content: space-between;
+}
+
+#DMKHeader h2 {
+    color: white;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+/*Barra de navegación*/
+
+#DMKNav {
+    background-color: #f3f3f3;
+}
+
+#DMKNav .container-fluid .navbar-brand {
+    color: #186cf7;
+}
+
+
+/*Carousel*/
+
+.carousel-caption h5 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*Titulos*/
+
+#titulo {
+    margin: 20px;
+    text-align: center;
+}
+
+#titulo p {
+    color: #186cf7;
+}
+
+#titulo h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/*Cajas de Servicios*/
+
+#contenedor-cajas {
+    display: flex;
+    margin: 0px auto;
+    width: 70%;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#contenedor-cajas .caja {
+    display: block;
+    width: 30%;
+    height: 320px;
+    box-shadow: 1px 6px 6px 6px rgb(230, 230, 230);
+    padding: 50px;
+    flex: 0 0 320px;
+    margin: 15px;
+}
+
+#contenedor-cajas .caja div,
+#contenedor-cajas .caja h5, 
+#contenedor-cajas .caja p {
+    text-align: center;
+}
+
+
+/*Footer*/
+
+.contenido-footer {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #212429;   
+}
+
+.contenedor-elementos {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.caja-footer p,
+.caja-footer .mb-1,
+.caja-footer .mb-4,
+.caja-footer .horario {
+    color: white;
+}
+
+.contenedor-elementos .caja-lista a {
+    display: block;
+    color: #ccc;
+}
+
+/*Media Queries*/
+
+
+@media (max-width: 992px) {
+    #row-1 .container-fluid #DMKHeader img{
+        display: none;
+    }
+    #row-1 .container-fluid #DMKHeader{
+        display: flex;
+        justify-content: start;
+    }
+    #DMKHeader h2 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1500px) {
+    #contenedor-cajas {
+        width: 90%;
+    }
+}
+
+@media (max-width: 345px) {
+    .carousel-caption h5 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #contenedor-cajas .caja {
+        flex: 0 0 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 860px) {
+    .contenedor-elementos {
+        display: block;
+    }
+
+    .contenedor-elementos .caja-footer {
+        margin-bottom: 60px;
+    }
+}
